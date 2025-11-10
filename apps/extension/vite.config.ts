@@ -29,7 +29,8 @@ export default defineConfig(() => ({
     },
     rollupOptions: {
       input: {
-        background: resolve(__dirname, 'src/background/background.ts'),
+        background: resolve(__dirname, 'src/scripts/background.ts'),
+        parser: resolve(__dirname, 'src/scripts/parser.ts'),
         index: resolve(__dirname, 'index.html'),
       },
       output: {
